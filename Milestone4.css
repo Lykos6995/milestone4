@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+nav {
+    background-color: rgba(255, 0, 0, 0.3);
+    grid-column: 1/9;
+    grid-row: 1;
+}
+
+.nav{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.logo{
+    background-color: rgba(0, 255, 0, 0.3);
+    grid-column: 1/9;
+    grid-row: 2;
+    height: 200px;
+    margin: 5px;
+}
+
+.bio{
+    background-color: rgba(0, 0, 255, 0.3);
+    grid-column: 2/6;
+    grid-row: 3;
+    height: 150px;
+    margin: 5px;
+}
+
+.video{
+    background-color: rgba(255, 0, 255, 0.3);
+    grid-column: 6/8;
+    grid-row: 3;
+    height: 150px;
+    margin: 5px;
+}
+
+.banner{
+    background-color: rgba(0, 255, 255, 0.3);
+    grid-column: 1/9;
+    grid-row: 4;
+    height: 150px;
+}
